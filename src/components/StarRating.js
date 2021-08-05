@@ -14,8 +14,13 @@ class StarRating extends Component {
     let maxRating = 5
 
     for (let i = 0; i < maxRating; i++) {
-      
+      stars.push(
+        <Star 
+          key={i}
+        />
+      )
     }
+    return stars
   }
 
   // Write an event handler that updates the rating state.
