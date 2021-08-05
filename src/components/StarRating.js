@@ -16,6 +16,7 @@ class StarRating extends Component {
     for (let i = 0; i < maxRating; i++) {
       stars.push(
         <Star 
+          setRating={ () => this.handleSetRating(i + 1) }
           key={i}
         />
       )
