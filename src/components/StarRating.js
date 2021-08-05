@@ -30,7 +30,7 @@ class StarRating extends Component {
   render() {
     return (
       <ul className="course--stars">
-        {/* Render the Star components */}
+        { this.renderStars() }
       </ul>
     );
   }
